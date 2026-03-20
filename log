@@ -50,3 +50,19 @@ Fri Mar 20 06:13:45 PM UTC 2026:
  tests:  1|4
 total_score: 10/70
 9516f92
+Fri Mar 20 06:17:20 PM UTC 2026: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:25: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   49 |          int elemento = malloc(sizeof(int));
+      |                         ^~~~~~
+exercises.c:50:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   50 |          *elemento = i + 1;
+      |          ^~~~~~~~~
+exercises.c:51:23: error: invalid type argument of unary ‘*’ (have ‘int’)
+   51 |          pushFront(L, *elemento);
+      |                       ^~~~~~~~~
+f6bdd00
