@@ -66,3 +66,19 @@ exercises.c:51:23: error: invalid type argument of unary ‘*’ (have ‘int’
    51 |          pushFront(L, *elemento);
       |                       ^~~~~~~~~
 f6bdd00
+Fri Mar 20 06:17:44 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:51:23: error: passing argument 2 of ‘pushFront’ makes pointer from integer without a cast [-Wint-conversion]
+   51 |          pushFront(L, *elemento);
+      |                       ^~~~~~~~~
+      |                       |
+      |                       int
+In file included from exercises.c:6:
+arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
+   17 | void pushFront(List *L, void *dato);
+      |                         ~~~~~~^~~~
+4d2da3f
