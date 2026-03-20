@@ -134,3 +134,13 @@ exercises.c:64:15: error: dereferencing ‘void *’ pointer [-Werror]
 exercises.c:64:15: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 4657374
+Fri Mar 20 06:24:42 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:12: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   64 |       suma += first(L);
+      |            ^~
+b1d7c79
