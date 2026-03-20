@@ -144,3 +144,9 @@ exercises.c:64:12: error: assignment to ‘int’ from ‘void *’ makes intege
    64 |       suma += first(L);
       |            ^~
 b1d7c79
+Fri Mar 20 06:26:37 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  3|2
+total_score: 30/70
+53aa824
