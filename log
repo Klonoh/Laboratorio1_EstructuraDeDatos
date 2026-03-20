@@ -88,3 +88,20 @@ Fri Mar 20 06:18:19 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 a3aca6c
+Fri Mar 20 06:23:11 PM UTC 2026: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:9: error: ‘elemento’ undeclared (first use in this function)
+   53 |    free(elemento);
+      |         ^~~~~~~~
+exercises.c:53:9: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:15: error: dereferencing ‘void *’ pointer [-Werror]
+   65 |       suma += *first(L);
+      |               ^~~~~~~~~
+exercises.c:65:15: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+613ee05
