@@ -82,3 +82,9 @@ arraylist.h:17:31: note: expected ‘void *’ but argument is of type ‘int’
    17 | void pushFront(List *L, void *dato);
       |                         ~~~~~~^~~~
 4d2da3f
+Fri Mar 20 06:18:19 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|3
+total_score: 20/70
+a3aca6c
