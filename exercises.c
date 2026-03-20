@@ -50,7 +50,7 @@ List* crea_lista() {
          *elemento = i + 1;
          pushFront(L, elemento);
       }
-   free(elemento);
+   free(*elemento);
    return L;
 }
 

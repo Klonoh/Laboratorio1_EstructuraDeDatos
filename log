@@ -105,3 +105,20 @@ exercises.c:65:15: error: dereferencing ‘void *’ pointer [-Werror]
 exercises.c:65:15: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 613ee05
+Fri Mar 20 06:23:31 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:10: error: ‘elemento’ undeclared (first use in this function)
+   53 |    free(*elemento);
+      |          ^~~~~~~~
+exercises.c:53:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘sumaLista’:
+exercises.c:65:15: error: dereferencing ‘void *’ pointer [-Werror]
+   65 |       suma += *first(L);
+      |               ^~~~~~~~~
+exercises.c:65:15: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+9e8b400
