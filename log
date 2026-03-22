@@ -190,3 +190,14 @@ exercises.c:83:17: error: invalid use of incomplete typedef ‘List’
    83 |       numero = L->current;
       |                 ^~
 19e7155
+Sun Mar 22 11:01:01 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:83:17: error: ‘L’ is a pointer; did you mean to use ‘->’?
+   83 |       numero = L.current;
+      |                 ^
+      |                 ->
+cf47fa5
