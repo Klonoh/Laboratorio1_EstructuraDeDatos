@@ -369,3 +369,16 @@ exercises.c:131:20: error: comparison between pointer and integer [-Werror]
 exercises.c:131:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
 cc1: all warnings being treated as errors
 dd0ac07
+Sun Mar 22 11:42:23 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+  130 |       if(*cadena[i] == "(") izq++;
+      |          ^~~~~~~~~~
+exercises.c:131:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |       if(*cadena[i] == ")") der++;
+      |          ^~~~~~~~~~
+6d75ba3
