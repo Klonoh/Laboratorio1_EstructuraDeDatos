@@ -328,3 +328,28 @@ exercises.c:131:10: error: invalid type argument of unary ‘*’ (have ‘int�
   131 |       if(*cadena[i] == ")") der++;
       |          ^~~~~~~~~~
 b45bd99
+Sun Mar 22 11:41:27 PM UTC 2026: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:126:26: error: passing argument 1 of ‘strlen’ from incompatible pointer type [-Wincompatible-pointer-types]
+  126 |    size_t talla = strlen(&cadena);
+      |                          ^~~~~~~
+      |                          |
+      |                          char **
+In file included from test.c:3:
+/nix/store/m3n0h7646c7qwf6dbvdqhslmxmv2dg3z-glibc-2.40-66-dev/include/string.h:407:35: note: expected ‘const char *’ but argument is of type ‘char **’
+  407 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+exercises.c:130:20: error: comparison between pointer and integer [-Werror]
+  130 |       if(cadena[i] == "(") izq++;
+      |                    ^~
+exercises.c:130:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:131:20: error: comparison between pointer and integer [-Werror]
+  131 |       if(cadena[i] == ")") der++;
+      |                    ^~
+exercises.c:131:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
+cc1: all warnings being treated as errors
+293310d
