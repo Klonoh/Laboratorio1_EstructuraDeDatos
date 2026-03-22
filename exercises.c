@@ -78,12 +78,12 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-   
-  /* while(first(L) != NULL){
-      int* numero = first(L);
-      if(*numero == elem) popCurrent(L);
-      else next(L);
-   }*/
+   int numero;
+   for (int i = 0 ; i < get_size(L) ; i++){
+      numero = L->current;
+      if(numero == elem) popCurrent(L);
+      next(L);
+   }
 }
 
 /*
