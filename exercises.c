@@ -79,7 +79,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-   int* numero = malloc(sizeof(int));
+   int* numero;
    int i = 0;
    while(1){
       if(i == 0) numero = first(L);
@@ -88,7 +88,6 @@ void eliminaElementos(List*L, int elem){
       if(*numero == elem) popCurrent(L);
       i++;
    }
-   free(numero);
 }
 
 /*
