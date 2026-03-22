@@ -248,3 +248,14 @@ Sun Mar 22 11:16:55 PM UTC 2026:
  tests:  3|2
 total_score: 40/70
 8edf7fc
+Sun Mar 22 11:17:53 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:53:9: error: ‘elemento’ undeclared (first use in this function)
+   53 |    free(elemento);
+      |         ^~~~~~~~
+exercises.c:53:9: note: each undeclared identifier is reported only once for each function it appears in
+e0a49c9
