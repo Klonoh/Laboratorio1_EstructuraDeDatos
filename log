@@ -224,3 +224,9 @@ exercises.c:83:25: error: invalid use of incomplete typedef ‘List’
    83 |       numero = L->data[L->current];
       |                         ^~
 75873b1
+Sun Mar 22 11:05:45 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  4|1
+total_score: 50/70
+bd02fce

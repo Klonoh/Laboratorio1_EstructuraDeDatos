@@ -80,9 +80,9 @@ posiciona en el elemento anterior.
 void eliminaElementos(List*L, int elem){
    int* numero = malloc(sizeof(int));
    for (int i = 0 ; i < get_size(L) ; i++){
-      numero = L->data[L->current];
+      if(i == 0) numero = first(L);
+      else numero = next(L);
       if(*numero == elem) popCurrent(L);
-      next(L);
    }
 }
 
