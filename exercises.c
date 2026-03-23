@@ -129,8 +129,8 @@ int parentesisBalanceados(char *cadena) {
    for(int i = 0 ; i < talla ; i++){
       char* parentesis = malloc(sizeof(char));
       *parentesis = cadena[i];
-      push(pila, letra);
-      push(pila_aux, letra);
+      push(pila, parentesis);
+      push(pila_aux, parentesis);
    }
    while(top(pila_aux) != NULL){
          push(pila2, top(pila_aux));

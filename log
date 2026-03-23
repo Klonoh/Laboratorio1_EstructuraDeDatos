@@ -477,3 +477,15 @@ exercises.c:139:14: error: ‘pila1’ undeclared (first use in this function); 
       |              ^~~~~
       |              pila2
 c033f66
+Mon Mar 23 12:26:20 AM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:139:14: error: ‘pila1’ undeclared (first use in this function); did you mean ‘pila2’?
+  139 |    while(top(pila1) != NULL){
+      |              ^~~~~
+      |              pila2
+exercises.c:139:14: note: each undeclared identifier is reported only once for each function it appears in
+654e680
