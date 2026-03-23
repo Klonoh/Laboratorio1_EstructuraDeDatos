@@ -137,8 +137,8 @@ int parentesisBalanceados(char *cadena) {
          pop(pila_aux);
    }
    while(top(pila) != NULL){
-      int* elemento1 = top(pila);
-      int* elemento2 = top(pila2);
+      char* elemento1 = top(pila);
+      char* elemento2 = top(pila2);
       if(*elemento1 == ')') *elemento1 = '(';
       else if(*elemento1 == '}') *elemento1 = '{';
       else if(*elemento1 == ']') *elemento1 = '[';
