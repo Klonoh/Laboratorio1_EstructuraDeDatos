@@ -462,3 +462,18 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
    11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
       |                         ~~~~~~^~~~
 b65c57a
+Mon Mar 23 12:26:02 AM UTC 2026: 
+ exercises.c | 20 ++++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:18: error: ‘letra’ undeclared (first use in this function)
+  132 |       push(pila, letra);
+      |                  ^~~~~
+exercises.c:132:18: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:139:14: error: ‘pila1’ undeclared (first use in this function); did you mean ‘pila2’?
+  139 |    while(top(pila1) != NULL){
+      |              ^~~~~
+      |              pila2
+c033f66
