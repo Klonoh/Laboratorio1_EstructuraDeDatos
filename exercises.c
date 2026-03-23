@@ -136,7 +136,7 @@ int parentesisBalanceados(char *cadena) {
          push(pila2, top(pila_aux));
          pop(pila_aux);
    }
-   while(top(pila1) != NULL){
+   while(top(pila) != NULL){
       int* elemento1 = top(pila);
       int* elemento2 = top(pila2);
       if(*elemento1 == ')') *elemento1 = '(';
@@ -146,6 +146,8 @@ int parentesisBalanceados(char *cadena) {
       else if(*elemento1 == '{') *elemento1 = '}';
       else if(*elemento1 == '[') *elemento1 = ']';
       if(*elemento1 != *elemento2) return 0;
+      pop(pila);
+      pop(pila2);
    }
    return 1;
 }

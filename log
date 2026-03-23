@@ -489,3 +489,9 @@ exercises.c:139:14: error: ‘pila1’ undeclared (first use in this function); 
       |              pila2
 exercises.c:139:14: note: each undeclared identifier is reported only once for each function it appears in
 654e680
+Mon Mar 23 12:27:12 AM UTC 2026: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+ tests:  4|1
+total_score: 50/70
+e36e58a
