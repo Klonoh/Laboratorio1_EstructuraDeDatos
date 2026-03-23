@@ -501,3 +501,17 @@ Mon Mar 23 12:29:12 AM UTC 2026:
  tests:  4|1
 total_score: 50/70
 62311ac
+Mon Mar 23 12:44:41 AM UTC 2026: 
+ exercises.c | 20 +++++---------------
+ 1 file changed, 5 insertions(+), 15 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:140:22: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  140 |       if(*izq == '(' && *der != ')' || *izq == '{' && *der != '}' || *izq == '[' && *der != '}' ) return 0;
+      |          ~~~~~~~~~~~~^~~~~~~~~~~~~~
+exercises.c:140:82: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  140 |       if(*izq == '(' && *der != ')' || *izq == '{' && *der != '}' || *izq == '[' && *der != '}' ) return 0;
+      |                                                                      ~~~~~~~~~~~~^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+e6438b3
